@@ -1,0 +1,32 @@
+header {
+  background-color: #FFFFFF;
+  height: 120px;
+  color: #000000;
+  padding: 0 30px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between; /* 사이드로 밀기 */
+  align-items: center; /* 높이 중앙으로 */
+  border-bottom: 1px solid #000000; /* 헤더 아래쪽에 1px 실선 추가 */
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 50px; /* 메뉴 간 여백 */
+}
+
+nav li:last-child {
+  margin-left: 80px;
+  margin-right: 0; /* 마지막 메뉴 오른쪽 여백 제거 */
+}
