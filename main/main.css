@@ -1,13 +1,23 @@
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
 header {
   background-color: #FFFFFF;
   height: 120px;
   color: #000000;
-  padding: 0 30px;
+  padding: 0 50px;
   margin: 0;
   display: flex;
   justify-content: space-between; /* 사이드로 밀기 */
-  align-items: center; /* 높이 중앙으로 */
-  border-bottom: 1px solid #000000; /* 헤더 아래쪽에 1px 실선 추가 */
+  align-items: center; /* 높이 중앙 정렬 */
+  border-bottom: 1px solid #000000;
+  font-weight: bold;
+  font-size: 25px;
 }
 
 .logo img {
@@ -23,10 +33,63 @@ nav ul {
 }
 
 nav li {
-  margin-right: 50px; /* 메뉴 간 여백 */
+  margin-right: 70px; /* 메뉴 간 여백 */
 }
 
 nav li:last-child {
-  margin-left: 80px;
+  margin-left: 70px;
   margin-right: 0; /* 마지막 메뉴 오른쪽 여백 제거 */
+}
+
+#home {
+  display: flex;
+  /* background-color: #EEEEEE; */
+  margin: 50px 0 10px 0;
+  padding: 30px 0;
+  height: 600px;
+  width: 100%;
+}
+
+.intro {
+  display: flex;
+  /* background-color: #F4F775; */
+  margin: 0 50px;
+  height: 600px;
+  width: 100%;
+  align-items: center;
+}
+
+.intro img {
+  /* background-color: #FF8FAF; */
+  width: 80%;
+}
+
+.banner {
+  border: 2px solid #000000;
+  margin: 0 50px;
+  height: 600px;
+  width: 100%;
+}
+
+#info {
+  display: flex;
+  flex-direction: column; /* 수직 정렬 (기본 값: row) */
+  /* background-color: #EEEEEE; */
+  padding: 30px 0;
+  height: 1220px;
+  width: 100%;
+}
+
+.esg {
+  border: 2px solid #000000;
+  margin: 0 50px 20px 50px;
+  height: 600px;
+  width: auto;
+}
+
+.given {
+  border: 2px solid #000000;
+  margin: 0 50px;
+  height: 600px;
+  width: auto;
 }
