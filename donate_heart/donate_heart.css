@@ -1,3 +1,7 @@
+body{
+  font-family: "Noto Sans KR", sans-serif;
+}
+
 header {
   background-color: #FFFFFF;
   height: 120px;
@@ -8,6 +12,8 @@ header {
   justify-content: space-between; /* 사이드로 밀기 */
   align-items: center; /* 높이 중앙으로 */
   border-bottom: 1px solid #000000; /* 헤더 아래쪽에 1px 실선 추가 */
+  font-weight: bold;
+  font-size: 25px;
 }
 
 .logo img {
@@ -29,4 +35,47 @@ nav li {
 nav li:last-child {
   margin-left: 80px;
   margin-right: 0; /* 마지막 메뉴 오른쪽 여백 제거 */
+}
+
+#heart {
+  display: flex;
+  padding: 50px 0;
+  margin: 20px 0 0 0;
+  
+  height: 600px;
+  width: 100%;
+}
+
+.message_wrap {
+  position: relative;
+  margin: 0 50px 0 50px;
+  height: 600px;
+  width: 80%;
+  border: 2px solid black;
+  box-sizing: border-box;
+}
+
+.message_wrap .message_header {font-size: 15px; padding:10px; background-color: beige; text-align: center;}
+.message_wrap .chat {padding-bottom: 100px;}
+.message_wrap .chat ul {width:100%; list-style: none;}
+.message_wrap .chat ul li {width : 100%}
+.message_wrap .chat ul li.left {text-align: left;}
+.message_wrap .chat ul li.right {text-align: right;}
+
+.message_wrap .chat ul li > div { font-size: 13px;}
+.message_wrap .chat ul li > div.sender {margin: 10px 20px 0 20px; font-weight: bold;}
+.message_wrap .chat ul li> div.message {display: inline-block; word-break:break-all; margin:5px 20px; 
+  max-width: 75%; border:1px solid #888; padding: 10px; border-radius: 5px; 
+  background-color: #FCFCFC; color: #555; text-align:left;}
+.message_wrap .input {position: absolute; bottom: 0; left:0; width: calc(100% - 4px); 
+  padding: 10px; box-sizing: border-box; background-color:#FFF; text-align:center; border-top:1px solid #F18C7E;}
+.message_wrap .input > textarea{width: calc(100% - 20px); height:80px; border:none;  box-sizing: border-box;}
+
+.format {display:none;}
+
+.tree_img {
+  border: 2px solid black;
+  margin: 0 50px 0 50px;
+  height: 600px;
+  width: 90%;
 }
