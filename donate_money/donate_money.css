@@ -1,40 +1,60 @@
-body{
+body {
   font-family: "Noto Sans KR", sans-serif;
 }
 
 header {
   background-color: #FFFFFF;
   height: 120px;
-  color: #000000;
-  padding: 0 30px;
+  color: #341A12;
+  padding: 0 50px;
   margin: 0;
   display: flex;
   justify-content: space-between; /* 사이드로 밀기 */
-  align-items: center; /* 높이 중앙으로 */
-  border-bottom: 1px solid #000000; /* 헤더 아래쪽에 1px 실선 추가 */
+  align-items: center; /* 높이 중앙 정렬 (flex box) */
+  border-bottom: 1px solid #341A12;
   font-weight: bold;
   font-size: 25px;
 }
 
 .logo img {
-  width: 100px;
+  width: 130px;
   height: auto;
+}
+
+nav a {
+  text-decoration: none;
+  color: #341A12;
+}
+
+nav a:hover {
+  color: #AFD198;
 }
 
 nav ul {
   list-style-type: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   display: flex;
 }
 
 nav li {
-  margin-right: 50px; /* 메뉴 간 여백 */
+  margin-right: 70px; /* 메뉴 간 여백 */
+  margin-top: 10px;
 }
 
 nav li:last-child {
-  margin-left: 80px;
   margin-right: 0; /* 마지막 메뉴 오른쪽 여백 제거 */
+  margin-top: 0px;
+}
+
+nav img {
+  width: 50px;
+  display: block;
+  margin: 0 auto;
+}
+
+nav ul li.nav_mypage a:hover img {
+  content: url('src/img_mypage2.png'); 
 }
 
 .money_title {
