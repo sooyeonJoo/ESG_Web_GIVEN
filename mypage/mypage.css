@@ -1,3 +1,7 @@
+body{
+  font-family: "Noto Sans KR", sans-serif;
+}
+
 header {
   background-color: #FFFFFF;
   height: 120px;
@@ -8,6 +12,8 @@ header {
   justify-content: space-between; /* 사이드로 밀기 */
   align-items: center; /* 높이 중앙으로 */
   border-bottom: 1px solid #000000; /* 헤더 아래쪽에 1px 실선 추가 */
+  font-weight: bold;
+  font-size: 25px;
 }
 
 .logo img {
@@ -29,4 +35,69 @@ nav li {
 nav li:last-child {
   margin-left: 80px;
   margin-right: 0; /* 마지막 메뉴 오른쪽 여백 제거 */
+}
+
+#my {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+  margin: 20px 0 0 0;
+}
+
+.left_wrap {
+  display: flex;
+  flex: 0 0 60%; /* 5분의 3 */
+  flex-direction: column; /* 내부 요소들을 세로로 배치합니다. */
+  border: 2px solid black;
+  margin: 0 0 0 40px;
+}
+
+.profile_wrap{
+  display: flex;
+  padding: 50px 0;
+  margin: 30px;
+  height: 250px;
+  width: 900px;
+  background-color: pink;
+}
+
+.profile-pic {
+  margin: 0px 40px;
+  width: 250px; /* 프로필 사진의 너비 */
+  height: 250px; /* 프로필 사진의 높이 */
+  border-radius: 50%; /* 원형 프로필 사진을 만들기 위해 반지름 지정 */
+  overflow: hidden; /* 내부 이미지가 경계를 벗어나지 않도록 설정 */
+}
+
+.profile-pic input[type="file"] {
+  display: none; /* 파일 업로드 input을 화면에서 숨깁니다. */
+}
+
+.profile-pic img {
+  width: 100%; /* 내부 이미지를 부모 요소에 꽉 채우도록 설정합니다. */
+  height: auto; /* 이미지의 비율을 유지합니다. */
+  cursor: pointer; /* 마우스를 가져다 대면 포인터 모양으로 변경합니다. */
+}
+
+.profile_info {
+  margin: 0px 40px;
+  border: 2px solid black;
+  width: 500px;
+  height: 250px;
+}
+
+.list_like_wrap {
+  display: flex;
+  margin: 30px;
+  height: 700px;
+  width: 900px;
+  border: 2px solid black;
+}
+
+
+.right_wrap {
+  flex: 0 0 30%; /* 5분의 3 */
+  flex-direction: column; /* 내부 요소들을 세로로 배치합니다. */
+  border: 2px solid black;
+  margin: 0 40px 0 20px;
 }
