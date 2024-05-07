@@ -1,66 +1,78 @@
 body {
+  margin: 0;
+  padding: 0;
   font-family: "Noto Sans KR", sans-serif;
 }
 
 header {
   background-color: #FFFFFF;
-  height: 120px;
   color: #341A12;
-  padding: 0 50px;
+  height: 130px;
+  width: 100%;
+  padding: 0;
   margin: 0;
   display: flex;
+  position: fixed;
+  top: 0;
   justify-content: space-between; /* 사이드로 밀기 */
   align-items: center; /* 높이 중앙 정렬 (flex box) */
   border-bottom: 1px solid #341A12;
   font-weight: bold;
   font-size: 25px;
+  z-index: 100;
 }
 
-.logo img {
+header .logo img {
+  padding-left: 50px;
   width: 130px;
   height: auto;
 }
 
-nav a {
+header nav {
+  padding-right: 50px;
+}
+
+header a {
   text-decoration: none;
   color: #341A12;
 }
 
-nav a:hover {
+header a:hover {
   color: #AFD198;
 }
 
-nav ul {
+header ul {
   list-style-type: none;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   display: flex;
 }
 
-nav li {
-  margin-right: 70px; /* 메뉴 간 여백 */
-  margin-top: 10px;
+header ul li {
+  margin-right: 60px; /* 메뉴 간 여백 */
+  margin-top: 15px;
 }
 
-nav li:last-child {
-  margin-right: 0; /* 마지막 메뉴 오른쪽 여백 제거 */
+header ul li:last-child {
+  margin-left: 40px;
+  margin-right: 0px; 
   margin-top: 0px;
 }
 
-nav img {
+header nav img {
   width: 50px;
   display: block;
   margin: 0 auto;
 }
 
-nav ul li.nav_mypage a:hover img {
+header nav ul li:last-child a:hover img {
   content: url('src/img_mypage2.png'); 
 }
 
 #home {
   display: flex;
   /* background-color: #EEEEEE; */
-  margin: 50px 0 10px 0;
+  margin: 180px 0 10px 0;
   padding: 30px 0;
   height: 600px;
   width: 100%;
@@ -68,16 +80,44 @@ nav ul li.nav_mypage a:hover img {
 
 .intro {
   display: flex;
+  position: relative;
   /* background-color: #F4F775; */
   margin: 0 50px;
   height: 600px;
   width: 100%;
   align-items: center;
+  color: #341A12;
+  font-size: 35px;
+  font-family: "Nanum DaHaengCe", "Noto Sans KR", sans-serif;
+}
+
+.intro_01 {
+  /* background-color: aliceblue; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 30px;
+  width: 70%;
+  height: 150px;
+  align-content: center;
+  text-align: left;
 }
 
 .intro img {
   /* background-color: #FF8FAF; */
+  margin-left: 30px;
   width: 80%;
+}
+
+.intro_02 {
+  /* background-color: aliceblue; */
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 70%;
+  height: 150px;
+  align-content: center;
+  text-align: right;
 }
 
 .banner {
@@ -90,22 +130,47 @@ nav ul li.nav_mypage a:hover img {
 #info {
   display: flex;
   flex-direction: column; /* 수직 정렬 (기본 값: row) */
-  /* background-color: #EEEEEE; */
-  padding: 30px 0;
-  height: 1220px;
+  background-color: #EEEEEE;
+  height: 1260px;
   width: 100%;
+}
+
+.info_title {
+  background-color: #AFD198;
+  text-align: center;
+  font-size: 40px;
+  font-family: "Nanum DaHaengCe", "Noto Sans KR", sans-serif;
 }
 
 .esg {
   border: 2px solid #000000;
-  margin: 0 50px 20px 50px;
+  margin: 20px 50px;
   height: 600px;
   width: auto;
+  display: flex;
+}
+
+.esg_circle {
+  display: flex;
+  justify-content: center;
+}
+
+.circle {
+  background-color: #E8EFCF;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Nanum DaHaengCe", "Noto Sans KR", sans-serif;
 }
 
 .given {
   border: 2px solid #000000;
-  margin: 0 50px;
+  margin: 0 50px 20px 50px;
   height: 600px;
   width: auto;
 }
