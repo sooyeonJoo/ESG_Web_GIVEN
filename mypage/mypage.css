@@ -57,40 +57,51 @@ nav ul li.nav_mypage a:hover img {
   content: url('src/img_mypage2.png'); 
 }
 
+.background-image {
+  background-image: url('src/mypage_background.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  width: 1505px;
+  height: 400px; 
+  z-index: -1;
+  position: absolute;
+  margin: 0;
+}
+
 #my {
   display: flex;
   justify-content: space-between;
-  padding: 50px 0;
-  margin: 20px 0 0 0;
+  margin: 80px 70px 50px 170px;
+  background-color: #FFFFFF;
 }
 
 .left_wrap {
   display: flex;
-  flex: 0 0 60%; /* 5분의 3 */
+  width: 800px;
   flex-direction: column; /* 내부 요소들을 세로로 배치합니다. */
   border: 2px solid black;
-  margin: 0 0 0 40px;
+  margin: 0 50px 0 0;
 }
 
 .profile_wrap{
   display: flex;
-  padding: 50px 0;
-  margin: 30px;
-  height: 250px;
-  width: 900px;
-  background-color: pink;
+  padding: 0;
+  margin: 0;
+  height: 300px;
+  width: 800px;
 }
 
 .profile-pic {
-  margin: 0px 40px;
-  width: 250px; /* 프로필 사진의 너비 */
-  height: 250px; /* 프로필 사진의 높이 */
-  border-radius: 50%; /* 원형 프로필 사진을 만들기 위해 반지름 지정 */
-  overflow: hidden; /* 내부 이미지가 경계를 벗어나지 않도록 설정 */
+  margin: 50px 30px 40px 30px;
+  width: 200px; /* 프로필 사진의 너비 */
+  height: 200px; /* 프로필 사진의 높이 */
+  border-radius: 50%; 
+  overflow: hidden;
 }
 
 .profile-pic input[type="file"] {
-  display: none; /* 파일 업로드 input을 화면에서 숨깁니다. */
+  display: none; 
 }
 
 .profile-pic img {
@@ -100,7 +111,7 @@ nav ul li.nav_mypage a:hover img {
 }
 
 .profile_info {
-  margin: 0px 40px;
+  margin: 30px 10px 30px 0;
   border: 2px solid black;
   width: 500px;
   height: 250px;
@@ -108,16 +119,16 @@ nav ul li.nav_mypage a:hover img {
 
 .list_like_wrap {
   display: flex;
-  margin: 30px;
-  height: 700px;
-  width: 900px;
+  margin: 0;
+  height: 600px;
+  width: 800px;
   border: 2px solid black;
 }
 
 
 .right_wrap {
-  flex: 0 0 30%; /* 5분의 3 */
+  width: 500px;
   flex-direction: column; /* 내부 요소들을 세로로 배치합니다. */
   border: 2px solid black;
-  margin: 0 40px 0 20px;
+  
 }
