@@ -138,8 +138,11 @@ header nav ul li:last-child a:hover img {
 .info_title {
   background-color: #AFD198;
   text-align: center;
+  display: flex; /* 내부 요소들을 가로로 정렬하기 위해 flex를 사용합니다. */
   font-size: 40px;
   font-family: "Nanum DaHaengCe", "Noto Sans KR", sans-serif;
+  margin-bottom: 30px;
+  justify-content: center;
 }
 
 .esg {
@@ -148,17 +151,20 @@ header nav ul li:last-child a:hover img {
   height: 600px;
   width: auto;
   display: flex;
+  flex-direction: column;
 }
 
 .esg_circle {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center; 
 }
 
 .circle {
   background-color: #E8EFCF;
   width: 300px;
   height: 300px;
+  margin: 0 50px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
