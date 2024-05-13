@@ -84,14 +84,14 @@ header nav ul li:last-child a:hover img {
 #my {
   display: flex;
   justify-content: space-between;
-  margin: 180px 70px 50px 170px;
+  margin: 80px 70px 50px 170px;
   background-color: #FFFFFF;
 }
 
 .left_wrap {
   display: flex;
   width: 800px;
-  flex-direction: column; /* 내부 요소들을 세로로 배치합니다. */
+  flex-direction: column; /* 내부 요소들을 세로로 배치*/
   border: 2px solid black;
   margin: 0 50px 0 0;
 }
@@ -106,8 +106,8 @@ header nav ul li:last-child a:hover img {
 
 .profile-pic {
   margin: 50px 30px 40px 30px;
-  width: 200px; /* 프로필 사진의 너비 */
-  height: 200px; /* 프로필 사진의 높이 */
+  width: 200px;
+  height: 200px; 
   border-radius: 50%; 
   overflow: hidden;
 }
@@ -117,9 +117,9 @@ header nav ul li:last-child a:hover img {
 }
 
 .profile-pic img {
-  width: 100%; /* 내부 이미지를 부모 요소에 꽉 채우도록 설정합니다. */
-  height: auto; /* 이미지의 비율을 유지합니다. */
-  cursor: pointer; /* 마우스를 가져다 대면 포인터 모양으로 변경합니다. */
+  width: 100%; 
+  height: auto; /* 이미지의 비율을 유지 */
+  cursor: pointer; /*포인터 모양으로 변경*/
 }
 
 .profile_info {
@@ -140,7 +140,7 @@ header nav ul li:last-child a:hover img {
 
 .right_wrap {
   width: 500px;
-  flex-direction: column; /* 내부 요소들을 세로로 배치합니다. */
+  flex-direction: column;
   border: 2px solid black;
   
 }
