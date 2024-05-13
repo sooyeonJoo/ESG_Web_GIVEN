@@ -59,7 +59,7 @@ header ul li:last-child {
   margin-top: 0px;
 }
 
-header nav img {
+header nav img { 
   width: 50px;
   display: block;
   margin: 0 auto;
@@ -72,7 +72,7 @@ header nav ul li:last-child a:hover img {
 #home {
   display: flex;
   /* background-color: #EEEEEE; */
-  margin: 180px 0 10px 0;
+  margin: 180px 0 30px 0;
   padding: 30px 0;
   height: 600px;
   width: 100%;
@@ -138,16 +138,33 @@ header nav ul li:last-child a:hover img {
 .info_title {
   /* background-color: #AFD198; */
   text-align: center;
-  display: flex; /* 내부 요소들을 가로로 정렬하기 위해 flex를 사용 */
+  align-content: center;
   font-size: 40px;
-  font-family: "Nanum DaHaengCe", "Noto Sans KR", sans-serif;
   margin-bottom: 30px;
-  justify-content: center;
+}
+
+.info_title h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.info_text_esg {
+  /* background-color: aliceblue; */
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+.info_text_esg p {
+  margin: 0;
+  padding: 0;
 }
 
 .esg {
   /* border: 2px solid #000000; */
-  margin: 20px 50px;
+  background-color: #F9F9F9;
+  margin: 0;
+  padding: 50px;
   height: 600px;
   width: auto;
   display: flex;
@@ -162,9 +179,8 @@ header nav ul li:last-child a:hover img {
 
 .circle {
   background-color: #E8EFCF;
-  width: 300px;
-  height: 300px;
-  margin: 0 50px;
+  width: 350px;
+  height: 350px;
   border-radius: 50%;
   position: relative;
   display: flex;
@@ -193,17 +209,67 @@ header nav ul li:last-child a:hover img {
   border-radius: 50%;
   position: absolute;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  text-align: center;
   align-items: center;
-  font-size: 30px;
   transition: opacity 0.3s ease;
   opacity: 0;
   /*background-color: rgba(0, 0, 0, 0.2);*/
 }
 
+.circle_text h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 35px;
+}
+
+.circle_text p {
+  margin: 10px 0 0 0;
+  padding: 0;
+  font-size: 25px;
+}
+
 .given {
   border: 2px solid #000000;
-  margin: 0 50px 20px 50px;
-  height: 600px;
+  margin: 0;
+  padding: 50px;
+  height: 500px;
   width: auto;
+  position: relative;
+}
+
+.info_text_given {
+  background-color: aliceblue;
+  text-align: left;
+  font-size: 30px;
+  margin-bottom: 50px;
+  position: absolute;
+  top: 150px;
+  left: 50px;
+}
+
+.info_img_given img {
+  background-color: coral;
+  position: absolute;
+  width: 300px;
+  top: 180px;
+  left: 50px;
+}
+
+.info_text_given_2 {
+    background-color: aliceblue;
+    text-align: right;
+    font-size: 30px;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
+
+.info_img_given_2 img {
+  background-color: coral;
+  position: absolute;
+  width: 300px;
+  bottom: 0px;
+  right: 50px;
 }
